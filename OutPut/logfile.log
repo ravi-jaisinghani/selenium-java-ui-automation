@@ -1,0 +1,108 @@
+INFO  | 2022-06-14 21:12:18 | [Log] - ************************ Setup  Started ************************
+INFO  | 2022-06-14 21:12:18 | [Log] - Initializing Firefox Webdriver
+INFO  | 2022-06-14 21:12:22 | [Log] - Performing Webdriver Setup operation
+INFO  | 2022-06-14 21:12:30 | [Log] - Launching URLhttps://www.freeletics.com/
+INFO  | 2022-06-14 21:12:30 | [Log] - Returning the Webdriver Instance
+INFO  | 2022-06-14 21:12:30 | [Log] - ************************ Setup  Completed ************************
+INFO  | 2022-06-14 21:12:30 | [Log] - ****************************************************************************************
+INFO  | 2022-06-14 21:12:30 | [Log] - ****************************************************************************************
+INFO  | 2022-06-14 21:12:30 | [Log] - $$$$$$$$$$$$$$$$$$$$$  Starting Test  freeleticsSampleTest       $$$$$$$$$$$$$$$$$$$$$$$$$
+INFO  | 2022-06-14 21:12:30 | [Log] - ****************************************************************************************
+INFO  | 2022-06-14 21:12:30 | [Log] - ****************************************************************************************
+INFO  | 2022-06-14 21:12:30 | [Log] - Fetching properties from Testdata file = FreeleticsTest.properties
+INFO  | 2022-06-14 21:12:30 | [Log] - Initializing Home Page
+INFO  | 2022-06-14 21:12:30 | [Log] - Clicked on Accept Cookies Button
+INFO  | 2022-06-14 21:12:31 | [Log] - Clicked on Careers Link
+INFO  | 2022-06-14 21:12:31 | [Log] - Initializing Careers Page
+INFO  | 2022-06-14 21:12:32 | [Log] - Clicked on Openings button
+INFO  | 2022-06-14 21:12:32 | [Log] - Initializing Jobs Page
+INFO  | 2022-06-14 21:12:33 | [Log] - Clicked on Qa Position Link
+INFO  | 2022-06-14 21:12:33 | [Log] - Initializing Job Description Page
+INFO  | 2022-06-14 21:12:33 | [Log] - Verifying Job Description section
+INFO  | 2022-06-14 21:12:34 | [Log] - Verifying Job Title
+INFO  | 2022-06-14 21:12:34 | [Log] - Fetching Job Description Title
+INFO  | 2022-06-14 21:12:34 | [Log] - Verifying Job Location
+INFO  | 2022-06-14 21:12:34 | [Log] - Fetching Job Description Title
+INFO  | 2022-06-14 21:12:34 | [Log] - Verifying if Profile section is displayed or not
+INFO  | 2022-06-14 21:12:34 | [Log] - Verifying if Responsiblities section is displayed or not
+INFO  | 2022-06-14 21:12:34 | [Log] - Verifying Job Responsiblities points
+INFO  | 2022-06-14 21:12:34 | [Log] - Fetching number of job Responsibilities points
+INFO  | 2022-06-14 21:12:34 | [Log] - Verifying Job Profile points
+INFO  | 2022-06-14 21:12:34 | [Log] - Fetching number of job profile points
+INFO  | 2022-06-14 21:12:34 | [Log] - Clicked on Apply Now button
+INFO  | 2022-06-14 21:12:34 | [Log] - ************************* Execution Completed for TestfreeleticsSampleTest******************
+INFO  | 2022-06-14 21:12:34 | [Log] - ************************ Teardown  Started ************************
+INFO  | 2022-06-14 21:12:35 | [Log] - Quiting the Webdriver
+INFO  | 2022-06-14 21:12:35 | [Log] - ************************ Teardown  Completed ************************
+INFO  | 2022-06-14 21:17:05 | [Log] - ************************ Setup  Started ************************
+INFO  | 2022-06-14 21:17:05 | [Log] - Initializing Firefox Webdriver
+INFO  | 2022-06-14 21:17:09 | [Log] - Performing Webdriver Setup operation
+INFO  | 2022-06-14 21:17:15 | [Log] - Launching URLhttps://www.freeletics.com/
+INFO  | 2022-06-14 21:17:15 | [Log] - Returning the Webdriver Instance
+INFO  | 2022-06-14 21:17:15 | [Log] - ************************ Setup  Completed ************************
+INFO  | 2022-06-14 21:17:15 | [Log] - ****************************************************************************************
+INFO  | 2022-06-14 21:17:15 | [Log] - ****************************************************************************************
+INFO  | 2022-06-14 21:17:15 | [Log] - $$$$$$$$$$$$$$$$$$$$$  Starting Test  freeleticsSampleTest       $$$$$$$$$$$$$$$$$$$$$$$$$
+INFO  | 2022-06-14 21:17:15 | [Log] - ****************************************************************************************
+INFO  | 2022-06-14 21:17:15 | [Log] - ****************************************************************************************
+INFO  | 2022-06-14 21:17:15 | [Log] - Fetching properties from Testdata file = FreeleticsTest.properties
+INFO  | 2022-06-14 21:17:15 | [Log] - Initializing Home Page
+INFO  | 2022-06-14 21:17:16 | [Log] - Clicked on Accept Cookies Button
+INFO  | 2022-06-14 21:17:16 | [Log] - Clicked on Careers Link
+INFO  | 2022-06-14 21:17:16 | [Log] - Initializing Careers Page
+INFO  | 2022-06-14 21:17:17 | [Log] - Clicked on Openings button
+INFO  | 2022-06-14 21:17:17 | [Log] - Initializing Jobs Page
+INFO  | 2022-06-14 21:17:19 | [Log] - Clicked on Qa Position Link
+INFO  | 2022-06-14 21:17:19 | [Log] - Initializing Job Description Page
+INFO  | 2022-06-14 21:17:19 | [Log] - Verifying Job Description section
+INFO  | 2022-06-14 21:17:19 | [Log] - Verifying Job Title
+INFO  | 2022-06-14 21:17:19 | [Log] - Fetching Job Description Title
+INFO  | 2022-06-14 21:17:19 | [Log] - Verifying Job Location
+INFO  | 2022-06-14 21:17:19 | [Log] - Fetching Job Description Title
+INFO  | 2022-06-14 21:17:19 | [Log] - Verifying if Profile section is displayed or not
+INFO  | 2022-06-14 21:17:19 | [Log] - Verifying if Responsiblities section is displayed or not
+INFO  | 2022-06-14 21:17:19 | [Log] - Verifying Job Responsiblities points
+INFO  | 2022-06-14 21:17:19 | [Log] - Fetching number of job Responsibilities points
+INFO  | 2022-06-14 21:17:19 | [Log] - Verifying Job Profile points
+INFO  | 2022-06-14 21:17:19 | [Log] - Fetching number of job profile points
+INFO  | 2022-06-14 21:17:19 | [Log] - Clicked on Apply Now button
+INFO  | 2022-06-14 21:17:19 | [Log] - ************************* Execution Completed for TestfreeleticsSampleTest******************
+INFO  | 2022-06-14 21:17:19 | [Log] - ************************ Teardown  Started ************************
+INFO  | 2022-06-14 21:17:20 | [Log] - Quiting the Webdriver
+INFO  | 2022-06-14 21:17:20 | [Log] - ************************ Teardown  Completed ************************
+INFO  | 2022-06-14 21:49:23 | [Log] - ************************ Setup  Started ************************
+INFO  | 2022-06-14 21:49:23 | [Log] - Initializing Firefox Webdriver
+INFO  | 2022-06-14 21:49:26 | [Log] - Performing Webdriver Setup operation
+INFO  | 2022-06-14 21:49:39 | [Log] - Launching URLhttps://www.freeletics.com/
+INFO  | 2022-06-14 21:49:39 | [Log] - Returning the Webdriver Instance
+INFO  | 2022-06-14 21:49:39 | [Log] - ************************ Setup  Completed ************************
+INFO  | 2022-06-14 21:49:39 | [Log] - ****************************************************************************************
+INFO  | 2022-06-14 21:49:39 | [Log] - ****************************************************************************************
+INFO  | 2022-06-14 21:49:39 | [Log] - $$$$$$$$$$$$$$$$$$$$$  Starting Test  freeleticsSampleTest       $$$$$$$$$$$$$$$$$$$$$$$$$
+INFO  | 2022-06-14 21:49:39 | [Log] - ****************************************************************************************
+INFO  | 2022-06-14 21:49:39 | [Log] - ****************************************************************************************
+INFO  | 2022-06-14 21:49:39 | [Log] - Fetching properties from Testdata file = FreeleticsTest.properties
+INFO  | 2022-06-14 21:49:39 | [Log] - Initializing Home Page
+INFO  | 2022-06-14 21:49:39 | [Log] - Clicked on Accept Cookies Button
+INFO  | 2022-06-14 21:49:39 | [Log] - Clicked on Careers Link
+INFO  | 2022-06-14 21:49:39 | [Log] - Initializing Careers Page
+INFO  | 2022-06-14 21:49:41 | [Log] - Clicked on Openings button
+INFO  | 2022-06-14 21:49:41 | [Log] - Initializing Jobs Page
+INFO  | 2022-06-14 21:49:44 | [Log] - Clicked on Qa Position Link
+INFO  | 2022-06-14 21:49:44 | [Log] - Initializing Job Description Page
+INFO  | 2022-06-14 21:49:44 | [Log] - Verifying Job Description section
+INFO  | 2022-06-14 21:49:46 | [Log] - Verifying Job Title
+INFO  | 2022-06-14 21:49:46 | [Log] - Fetching Job Description Title
+INFO  | 2022-06-14 21:49:46 | [Log] - Verifying Job Location
+INFO  | 2022-06-14 21:49:46 | [Log] - Fetching Job Description Title
+INFO  | 2022-06-14 21:49:46 | [Log] - Verifying if Profile section is displayed or not
+INFO  | 2022-06-14 21:49:46 | [Log] - Verifying if Responsiblities section is displayed or not
+INFO  | 2022-06-14 21:49:46 | [Log] - Verifying Job Responsiblities points
+INFO  | 2022-06-14 21:49:46 | [Log] - Fetching number of job Responsibilities points
+INFO  | 2022-06-14 21:49:46 | [Log] - Verifying Job Profile points
+INFO  | 2022-06-14 21:49:46 | [Log] - Fetching number of job profile points
+INFO  | 2022-06-14 21:49:46 | [Log] - Clicked on Apply Now button
+INFO  | 2022-06-14 21:49:46 | [Log] - ************************* Execution Completed for TestfreeleticsSampleTest******************
+INFO  | 2022-06-14 21:49:46 | [Log] - ************************ Teardown  Started ************************
+INFO  | 2022-06-14 21:49:47 | [Log] - Quiting the Webdriver
+INFO  | 2022-06-14 21:49:47 | [Log] - ************************ Teardown  Completed ************************
