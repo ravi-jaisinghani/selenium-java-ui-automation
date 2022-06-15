@@ -1,0 +1,124 @@
+Part II assignment:
+
+Please find below the answers of the questions inlined:
+
+1. Which parts of the code you provided would need to be adapted to run the same
+tests in an Android phone, using the same browser, in the tool you chose?
+
+=> Same tests can be used to automate Mobile browser using Appium tool with changes in Driver initilization method by adding Desired capabilities.
+  In selenium-java-ui-automation repo> src/main/java> helpers > BaseSeleniumClass.java file need to add below code in driver initilization
+
+  ```
+  		DesiredCapabilities capabilities = new DesiredCapabilities();
+    	   
+
+    	 // capability to execute test in chrome browser
+    	 capabilities.setCapability(MobileCapabilityType.BROWSER_NAME,BrowserType.CHROME);
+    	 
+    	//  capability to execute our test in Android Platform
+    	   capabilities.setCapability(MobileCapabilityType.PLATFORM,Platform.ANDROID);
+    	 
+    	// we need to define platform name
+    	  capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
+    	 
+    	// Set the device name as well (you can give any name)
+    	  capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"androidphone");
+
+        //set the Automation Name  
+          capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
+
+    	 // set the android version as well 
+    	   capabilities.setCapability(MobileCapabilityType.VERSION,"9.0.");
+    	 
+    	 
+    	  URL url;
+		try {
+			  // Create object of URL class and specify the appium server address
+			  url = new URL("http://127.0.0.1:4723/wd/hub");
+			 // Create object of  AndroidDriver class and pass the url and capability that we created
+	    	  driver = new AndroidDriver(url, capabilities);
+
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+   ```
+  
+
+
+
+2. How could we run these tests in a physical android phone connected to your laptop?
+Does the laptop need any extra software/hardware to run them properly?
+
+==> Real device can be connected using laptop with PDAnet Software.
+   
+    Along with the PDAnet below software's are required to perform E-2-E testing on android phone
+    1.Android SDK
+    2.Node.js
+    3.AppiumServer
+    4.Java client Drivers (maven)
+    5.Appium client libraries (maven)
+
+   Process of testing:
+   1.Connect the real device with PDAnet.
+   2.Start appium server .
+   3.Add desired capabilities & start session.
+   4.App reload in device & appium server shows UIAutomator.
+   5. Run the script.
+   6. Get the result on real device.
+
+
+
+
+3. What would be the main changes if the website was now part of a hybrid android
+app?
+
+==> To Run same automation for hybrid app need to update below  Desired capabilities
+
+    //add app package name taken from installed application
+    capabilities.setCapability(appPackage,"com.freeletics.android");
+
+    //setting app activity name
+    capabilities.setCapability(appActivity,"com.freeletics.android.Mainactivity");
+
+    // browser name set to be Android as we are testing on android app NOT on mobile browser
+    capabilities.setCapability(MobileCapabilityType.BROWSER_NAME,"Android");
+   
+    
+
+4. And if it was a native app?
+
+==> Main difference between hybrid and native app is CONTEXT.
+
+    Native apps have context name as "NATIVE_APP"
+
+    Hybrid apps have context name as "WEBVIEW"
+
+    Context switching is important as some commands as "getElementByTagName" will work on only DOM(WEB_VIEW) not on  Native App.
+
+    We can check context and set it using below code sample:
+
+    ```
+    // assume capablities are already set
+    driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+
+    Set<String> contextNames = driver.getContextHandles();
+    for (String contextName : contextNames) {
+      System.out.println(contextName); //prints out something like NATIVE_APP or  WEBVIEW_1
+    }
+   driver.context(contextNames.toArray()[1]); // set context to WEBVIEW_1
+
+    //Perform WebView testing
+   String myText = driver.findElement(By.cssSelector(".green_button")).click();
+
+   driver.context("NATIVE_APP");
+
+   // Perform Native app testing
+
+    driver.quit();
+
+    ```
+
+    Along with appPackage and appActivity capability, We also have to consider context in case of Native Apps
+    
+    
